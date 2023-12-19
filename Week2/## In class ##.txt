@@ -1,0 +1,69 @@
+## In class ## 
+
+jshell> short bird = 'd' ;
+bird ==> 100
+// 'd'가 아스키코드로는 100이다. 
+
+jshell> int x = 'a' ;
+x ==> 97
+// 'a'가 아스키코드로는 97이다.
+
+jshell> char x = (short)83 ;
+x ==> 'S'
+
+
+jshell> short a = 65525 ;
+|  Error:
+|  incompatible types: possible lossy conversion from int to short
+|  short a = 65525 ;
+|            ^---^
+// 에러가 나는 이유
+// 65525를 담기에는 short는 너무 작다.
+
+jshell> char a = (short)-1 ;
+|  Error:
+|  incompatible types: possible lossy conversion from short to char
+|  char a = (short)-1 ;
+|           ^-------^
+// 에러가 나는 이유
+// char은 항상 positive를 가져야하기 때문에
+
+jshell> System.out.println((char)-100);
+?
+// 왜 ?를 주지?
+// 
+
+## tip ##
+clean screen : ctrl + L
+
+########## Octal, Ob ######
+jshell> int x = 0xabc
+x ==> 2748
+
+jshell> int x = 0b110110111
+x ==> 439
+
+
+####### casting #####
+jshell> double x = 1/2 ;
+x ==> 0.0
+
+jshell> double x = (double)1/2 ;
+x ==> 0.5
+
+jshell> double x = (double)(1/2) ;
+x ==> 0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
